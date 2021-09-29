@@ -85,6 +85,10 @@ impl KeyStore {
         Ok(key_store)
     }
 
+    pub fn keys(&self) -> Vec<JwtKey> {
+        self.keys.clone()
+    }
+
     pub fn clear_keys(&mut self) {
         self.keys.clear();
     }
